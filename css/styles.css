@@ -359,14 +359,24 @@ li {
 }
 
 /* ------------------------------------TEAM-------------------------------- */
+.company-header {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 72px;
+  color: var(--mainColor);
+}
 .team {
   background-color: var(--secondary);
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .team-list-about {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  justify-content: center;
+  row-gap: 72px;
 }
 .team-list {
   text-align: center;
@@ -404,6 +414,53 @@ li {
 .soc-item-link:hover,
 .soc-item-link:focus {
   background-color: var(--accent);
+}
+@media screen and (min-width: 768px) {
+  .team-list-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+  .team {
+    background-color: var(--secondary);
+    padding: 96px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    background-color: var(--secondary);
+    padding: 120px 0;
+  }
+  .team-list-about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .team-list {
+    text-align: center;
+    background-color: var(--white);
+    background: #ffffff;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .about {
+    padding: 32px 0;
+  }
+  .header-about {
+    padding-bottom: 8px;
+  }
+  .soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .soc-item {
+    width: 40px;
+    height: 40px;
+  }
 }
 /*---------------------------------- CUSTOMERS LOGO------------------------------- */
 .customers {
