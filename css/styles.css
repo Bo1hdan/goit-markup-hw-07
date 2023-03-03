@@ -60,6 +60,15 @@ li {
   clip-path: inset(50%);
   margin: -1px;
 }
+.header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--mainColor);
+  padding-bottom: 8px;
+  text-align: center;
+}
 
 /* .link-wrap {
   display: inline-block;
@@ -192,7 +201,6 @@ li {
   color: var(--white);
 }
 
-/* ----------------------------------ABOUT STUDIO */
 .btn {
   margin-top: 48px;
   padding: 16px 32px;
@@ -214,17 +222,19 @@ li {
   background-color: var(--accent);
   cursor: pointer;
 }
+/* ----------------------------------ABOUT STUDIO */
 .about-studio {
-  padding-top: 120px;
+  padding-top: 96px;
 }
 
 .about-studio-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 72px;
 }
 .about-item {
-  width: 264px;
+  width: 396px;
 }
 .about-wrap {
   display: flex;
@@ -235,10 +245,11 @@ li {
   background-color: var(--secondary);
   margin-bottom: 8px;
   border-radius: 4px;
+  display: none;
 }
 
 .text {
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--textColor);
@@ -261,6 +272,65 @@ li {
   left: 0px;
   top: 4.779327392578125px;
   border-radius: 0px;
+}
+@media screen and (min-width: 768px) {
+  .about-item {
+    width: 356px;
+  }
+  .header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--mainColor);
+    padding-bottom: 8px;
+    text-align: left;
+  }
+  .about-studio-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-studio {
+    padding-top: 120px;
+  }
+  .about-item {
+    width: 264px;
+  }
+  .about-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background-color: var(--secondary);
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+  .about-studio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .text {
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--textColor);
+  }
+  .header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--mainColor);
+    padding-bottom: 8px;
+  }
 }
 /* ------------------------------------COMPANY --------------------------- */
 .company-section {
@@ -735,12 +805,4 @@ li {
 }
 .wrapper {
   padding: 32px 0 32px 16px;
-}
-.header {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--mainColor);
-  padding-bottom: 8px;
 }
