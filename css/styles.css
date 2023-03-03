@@ -232,6 +232,7 @@ li {
   justify-content: center;
   flex-wrap: wrap;
   row-gap: 72px;
+  padding-bottom: 96px;
 }
 .about-item {
   width: 396px;
@@ -292,6 +293,7 @@ li {
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
+    padding-bottom: 96px;
   }
 }
 
