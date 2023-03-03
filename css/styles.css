@@ -333,21 +333,29 @@ li {
   }
 }
 /* ------------------------------------COMPANY --------------------------- */
-.company-section {
-  padding: 120px 0;
+@media screen and (max-width: 1199px) {
+  .company-section {
+    display: none;
+  }
 }
-.products-list {
-  display: flex;
-  gap: 24px;
-}
-.company-header {
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  text-align: center;
-  margin-bottom: 72px;
-  color: var(--mainColor);
+
+@media screen and (min-width: 1200px) {
+  .company-section {
+    padding: 120px 0;
+  }
+  .products-list {
+    display: flex;
+    gap: 24px;
+  }
+  .company-header {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 72px;
+    color: var(--mainColor);
+  }
 }
 
 /* ------------------------------------TEAM-------------------------------- */
