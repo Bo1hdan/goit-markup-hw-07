@@ -60,7 +60,7 @@ li {
   clip-path: inset(50%);
   margin: -1px;
 }
-.header {
+.header-about-studio {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -224,7 +224,7 @@ li {
 }
 /* ----------------------------------ABOUT STUDIO */
 .about-studio {
-  padding-top: 96px;
+  padding: 96px 0;
 }
 
 .about-studio-list {
@@ -232,7 +232,7 @@ li {
   justify-content: center;
   flex-wrap: wrap;
   row-gap: 72px;
-  padding-bottom: 96px;
+  /* padding-bottom: 96px; */
 }
 .about-item {
   width: 396px;
@@ -254,6 +254,7 @@ li {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--textColor);
+  padding-bottom: 8px;
 }
 .antena {
   height: 64px;
@@ -278,7 +279,7 @@ li {
   .about-item {
     width: 356px;
   }
-  .header {
+  .header-about-studio {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -293,13 +294,13 @@ li {
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
-    padding-bottom: 96px;
+    /* padding-bottom: 96px; */
   }
 }
 
 @media screen and (min-width: 1200px) {
   .about-studio {
-    padding-top: 120px;
+    padding: 120px 0;
   }
   .about-item {
     width: 264px;
@@ -325,7 +326,7 @@ li {
     letter-spacing: 0.02em;
     color: var(--textColor);
   }
-  .header {
+  .header-about-studio {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -343,7 +344,7 @@ li {
 
 @media screen and (min-width: 1200px) {
   .company-section {
-    padding: 120px 0;
+    padding: 0 0 120px 0;
   }
   .products-list {
     display: flex;
@@ -362,8 +363,8 @@ li {
 
 /* ------------------------------------TEAM-------------------------------- */
 .company-header {
-  font-size: 36px;
   line-height: 1.11;
+  font-size: 36px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
@@ -393,6 +394,10 @@ li {
 }
 .header-about {
   padding-bottom: 8px;
+  font-weight: 500;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  font-size: 20px;
 }
 .soc-list {
   display: flex;
@@ -429,6 +434,15 @@ li {
     background-color: var(--secondary);
     padding: 96px 0;
   }
+  .header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--mainColor);
+    padding-bottom: 8px;
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team {
@@ -453,6 +467,10 @@ li {
   }
   .header-about {
     padding-bottom: 8px;
+    font-weight: 500;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    font-size: 20px;
   }
   .soc-list {
     display: flex;
@@ -462,6 +480,15 @@ li {
   .soc-item {
     width: 40px;
     height: 40px;
+  }
+  .header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--mainColor);
+    padding-bottom: 8px;
+    text-align: center;
   }
 }
 /*---------------------------------- CUSTOMERS LOGO------------------------------- */
