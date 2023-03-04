@@ -559,15 +559,20 @@ li {
 /* ------------------------------------- FOOTER----------------------------------------- */
 .studio-footer {
   background: var(--mainColor);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.right-footer {
+  margin-bottom: 72px;
 }
 
 .logo-footer {
+  display: block;
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 18px;
@@ -575,12 +580,14 @@ li {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary);
+  text-align: center;
 }
 .footer-text {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--footerText);
   margin-top: 16px;
+  margin-bottom: 72px;
 }
 .social-text {
   font-weight: 500;
@@ -591,6 +598,7 @@ li {
 
   color: #ffffff;
   margin-bottom: 16px;
+  text-align: center;
 }
 .footer-soc-list {
   display: flex;
@@ -624,10 +632,13 @@ li {
 
   color: #ffffff;
   margin-bottom: 16px;
+  text-align: center;
 }
 .form-wrap {
   display: flex;
-  gap: 24px;
+  row-gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .footer-form-input {
   font-size: 12px;
@@ -636,7 +647,7 @@ li {
   background: #2e2f42;
   border-radius: 4px;
   height: 40px;
-  width: 264px;
+  width: 398px;
   border-radius: 4px;
   padding: 8px 16px;
   color: rgba(255, 255, 255, 0.6);
@@ -668,6 +679,148 @@ li {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+
+  .logo-footer {
+    display: block;
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    text-align: left;
+  }
+  .social-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .form-wrap {
+    display: flex;
+    column-gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-form-input {
+    font-size: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background: #2e2f42;
+    border-radius: 4px;
+    height: 40px;
+    width: 264px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer-form-text {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .form-footer {
+    padding-right: 35px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .studio-footer {
+    background: var(--mainColor);
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo-footer {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    text-align: left;
+  }
+  .social-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .footer-form-text {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .form-wrap {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-form-input {
+    font-size: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background: #2e2f42;
+    border-radius: 4px;
+    height: 40px;
+    width: 264px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .social-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .footer-text {
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--footerText);
+    margin-top: 16px;
+  }
 }
 /* --------------------------------------BACKDROP-------------------------------------------*/
 .backdrop {
