@@ -148,9 +148,9 @@ li {
   cursor: pointer;
   fill: var(--white);
 }
-.mob-menu-list {
-  /* margin-bottom: 24px; */
-}
+/* .mob-menu-list {
+  margin-bottom: 24px;
+} */
 .mob-menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
