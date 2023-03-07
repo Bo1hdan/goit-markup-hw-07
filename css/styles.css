@@ -321,6 +321,9 @@ li {
     justify-content: space-between;
     align-items: center;
   }
+  .nav-list-item:not(:last-child) {
+    margin-right: 0;
+  }
   .navigation-list {
     display: flex;
     gap: 40px;
