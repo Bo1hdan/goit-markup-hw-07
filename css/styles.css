@@ -1299,10 +1299,10 @@ li {
   color: #434455;
   padding-top: 8px;
 }
-.portfolio-img {
+/* .portfolio-img {
   width: 396px;
   height: 300px;
-}
+} */
 .btn-list {
   display: flex;
   flex-wrap: wrap;
